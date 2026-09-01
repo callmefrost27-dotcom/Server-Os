@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140052
+timestamp: 2026-09-01T07:25:28Z
+hostname: ubuntu
+---[user: getent passwd]---
+bob931:x:1002:1004::/home/bob931:/bin/sh
+---[group: getent group]---
+dba:x:1003:bob931
+---[user-in-group: id]---
+uid=1002(bob931) gid=1004(bob931) groups=1004(bob931),1003(dba)
+---[file stat: home file mode/owner]---
+/home/bob931/report_1501.txt mode=640 owner=bob931 group=dba
+---[sshd effective config]---
+port 2521
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: ced3001d31bd03736b101809f394d8a49c6d6daadd1549fe04b519571afeaa51
+===END LAB1 SUBMISSION===
